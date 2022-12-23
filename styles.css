@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+body {
+  font-size: 18px;
+  font-family: "Bai Jamjuree";
+}
+
+.logo {
+  background: url(images/bg-header-desktop.png);
+  display: flex;
+  justify-content: center;
+  padding-block: 40px;
+}
+
+.history {
+  padding-block: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.history h2 {
+  color: var(--DarkGrayishBlue);
+  font-size: 45px;
+}
+
+.history p {
+  color: var(--GrayishBlue);
+  width: 50%;
+}
+
+.buttons {
+  display: flex;
+  gap: 50px;
+}
+
+.btn {
+  padding-inline: 30px;
+  padding-block: 15px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  background: #000;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.ios {
+  background: var(--StrongCyan);
+}
+
+.mac {
+  background: var(--LightBlue);
+}
+
+.snippets {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.snippets h3 {
+  color: var(--DarkGrayishBlue);
+  font-size: 35px;
+}
+
+.snippets p {
+  color: var(--GrayishBlue);
+  width: 50%;
+}
+
+.featureContainer {
+  display: flex;
+  gap: 80px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.featureContainer img {
+  width: 50%;
+  margin-left: -30px;
+}
+
+.features h4 {
+  color: var(--DarkGrayishBlue);
+  padding-bottom: 10px;
+}
+
+.features p {
+  color: var(--GrayishBlue);
+  line-height: 2;
+}
+
+.access {
+  margin-block: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.access h3 {
+  color: var(--DarkGrayishBlue);
+  font-size: 35px;
+}
+
+.access p {
+  color: var(--GrayishBlue);
+  width: 50%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.image > img {
+  max-width: 100%;
+}
+
+.superCharge {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.superCharge h3 {
+  color: var(--DarkGrayishBlue);
+  font-size: 35px;
+}
+
+.superCharge p {
+  color: var(--GrayishBlue);
+  width: 50%;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline: 50px;
+}
+
+.box {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.box img {
+  height: 40px;
+  width: fit-content;
+}
+
+.box h5 {
+  color: var(--DarkGrayishBlue);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.box p {
+  color: var(--GrayishBlue);
+}
+
+.brands {
+  margin-block: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clipBoard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.clipBoard h3 {
+  color: var(--DarkGrayishBlue);
+  font-size: 35px;
+}
+
+.clipBoard p {
+  color: var(--GrayishBlue);
+  width: 50%;
+}
+
+.clipBoard .btn {
+  margin-bottom: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 130px;
+}
+
+.footerimg {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.footerimg > img {
+  width: 50px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 50%;
+}
+
+.links > * {
+  width: 30%;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--DarkGrayishBlue);
+  transition: 0.2s ease-out;
+}
+
+.links a:hover {
+  cursor: pointer;
+  color: var(--StrongCyan);
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  width: 25%;
+  justify-content: space-evenly;
+}
+
+.socials i {
+  font-size: 20px;
+  color: var(--GrayishBlue);
+  cursor: pointer;
+  animation: 0.2s ease-in-out;
+}
+
+.socials i:hover {
+  color: var(--StrongCyan);
+}
+
+@media screen and (max-width: 769px) {
+  .logo {
+    background: url(images/bg-header-mobile.png);
+    background-size: cover;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0;
+    width: 80%;
+  }
+
+  .btn {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .featureContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features {
+    width: 80%;
+  }
+
+  .boxContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box {
+    width: 80%;
+    margin-bottom: 60px;
+    gap: 35px;
+  }
+
+  .brands {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .clipBoard > .buttons {
+    margin-top: 60px;
+    gap: 40px;
+  }
+
+  footer {
+    margin-block: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .links > * {
+    width: fit-content;
+  }
+
+  .socials {
+    width: 50%;
+    padding-bottom: 50px;
+  }
+
+  .history p {
+    width: 80%;
+  }
+
+  .snippets p {
+    width: 80%;
+  }
+
+  .access p {
+    width: 80%;
+  }
+
+  .superCharge p {
+    width: 80%;
+  }
+
+  .clipBoard p {
+    width: 80%;
+  }
+}
